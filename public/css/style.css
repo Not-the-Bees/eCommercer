@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'AppleChancery';
+    font-style: normal;
+    font-weight: normal;
+    src: local('AppleChancery'), url('../fonts/AppleChancery.woff') format('woff');
+}
+
 body {
     padding-top: 80px;
     font-family: 'PT Sans Narrow', 'sans-serif';

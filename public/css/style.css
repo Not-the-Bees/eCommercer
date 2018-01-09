@@ -29,7 +29,7 @@ body {
     color: #C36328;
 }
 
-.navbar-dark .navbar-nav .nav-link {
+.navbar-nav .nav-link {
     color: white;
 }
 
@@ -37,7 +37,7 @@ body {
     background-color: #2F4F4F;
 }
 
-.navbar-dark .navbar-toggler-icon:hover {
+.navbar-toggler-icon:hover {
     cursor: pointer;
 }
 
@@ -50,4 +50,12 @@ footer {
     background-color: #C36328;
     color: white;
     padding: 8px;
+}
+
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
 }

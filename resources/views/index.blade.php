@@ -20,20 +20,25 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Produits</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         <li class="nav-item nav-link"> | </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> Account</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> Mon Compte</a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                                <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
+                                <a class="dropdown-item" href="portfolio-1-col.html">Suivre mes commandes</a>
+                                <a class="dropdown-item" href="portfolio-1-col.html">Mes bons d'achat/cadeau</a>
+                                <a class="dropdown-item" href="portfolio-1-col.html">Mes informations</a>
+                                <a class="dropdown-item" href="portfolio-1-col.html">Se déconnecter</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Mon Panier</a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                                <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
+                                <a class="dropdown-item" href="myCart.html">Quantité</a>
+                                <a class="dropdown-item" href="portfolio-1-col.html">Prix</a>
+                                <a class="dropdown-item" href="portfolio-1-col.html">Voir mon Panier</a>
                             </div>
                         </li>
                     </ul>

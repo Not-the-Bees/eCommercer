@@ -20,7 +20,9 @@ class CreateProductsTable extends Migration
             $table->string('img');
             $table->integer('rating');
             $table->float('price');
+            $table->integer('qte');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

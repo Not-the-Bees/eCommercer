@@ -1,0 +1,42 @@
+body {
+    padding-top: 80px;
+    font-family: 'PT Sans Narrow', 'sans-serif';
+    font-size: 18px;
+}
+
+.carousel-item {
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #C36328;
+    border-color: #C36328;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    border-color: #C36328;
+    color: #C36328;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar {
+    background-color: #2F4F4F;
+}
+
+.navbar-dark .navbar-toggler-icon:hover {
+    cursor: pointer;
+}

@@ -83,7 +83,7 @@
         <div class="container">
 
             <!-- Portfolio Section -->
-            <h2 class="my-4">Portfolio Heading</h2>
+            <h2 class="my-4 align-self-center">Les meilleurs ventes</h2>
 
             <div class="row">
                 <div class="col-lg-4 col-sm-6 portfolio-item">

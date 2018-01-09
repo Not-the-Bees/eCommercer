@@ -11,10 +11,9 @@
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     </head>
     <body>
-        <!-- Navigation -->
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
             <div class="container">
-                <a class="navbar-brand" href="index.html">eCommercer</a>
+                <a class="navbar-brand" href="index.html"><img src="{{ asset('img/logoeC.svg') }}"></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -79,12 +78,8 @@
             </div>
         </header>
 
-        <!-- Page Content -->
         <div class="container">
-
-            <!-- Portfolio Section -->
-            <h2 class="my-4 align-self-center">Les meilleurs ventes</h2>
-
+            <h2 class="text-center title-bg">Les meilleurs ventes</h2>
             <div class="row">
                 <div class="col-lg-4 col-sm-6 portfolio-item">
                     <div class="card h-100">
@@ -129,17 +124,12 @@
                     </div>
                 </div>
             </div>
-            <!-- /.row -->
-
         </div>
-        <!-- /.container -->
 
-        <!-- Footer -->
-        <footer class="py-5" style="background-color: #2F4F4F">
+        <footer class="py-5">
             <div class="container">
                 <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
             </div>
-            <!-- /.container -->
         </footer>
 
         <script src="{{ asset('js/jquery.min.js') }}"></script>

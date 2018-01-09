@@ -40,3 +40,14 @@ body {
 .navbar-dark .navbar-toggler-icon:hover {
     cursor: pointer;
 }
+
+footer {
+    background-color: #2F4F4F;
+}
+
+.title-bg {
+    margin-top: 10px;
+    background-color: #C36328;
+    color: white;
+    padding: 8px;
+}

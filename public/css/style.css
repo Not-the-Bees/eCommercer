@@ -80,10 +80,14 @@ main {
     color: #2F4F4F;
  }
 
-.font-slide {
+.font-shop {
     color: #C36328;
 }
 
 .btn-shop {
     width: 200px;
+}
+
+#hover:hover {
+    color: #FF8300;
 }

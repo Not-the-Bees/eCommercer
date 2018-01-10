@@ -50,7 +50,7 @@
 <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
         <div class="modal-header">
-                <h2 class="font-ecommercer">Une Chemise Bleue</h2>
+            <h2 class="font-ecommercer">Une Chemise Bleue</h2>
         </div>
         <div class="modal-body">
             <div class="row">
@@ -90,15 +90,15 @@
 
                 </div>
                 <div class="col-sm-7">
-                    <p class="text-gray alt-font">Catégorie : <a href="#">Fringues</a></p>
+                    <p class="text-gray alt-font">Catégorie : <a id="hover" class="font-shop" href="#">Fringues</a></p>
 
                     <i class="fa fa-star text-warning"></i>
                     <i class="fa fa-star text-warning"></i>
                     <i class="fa fa-star text-warning"></i>
                     <i class="fa fa-star text-warning"></i>
                     <i class="fa fa-star-half-o text-warning"></i>
-                    <span>(12 avis)</span>
-                    <h4 class="text-primary">999€</h4>
+                    <span><a id="hover" class="font-shop" href="#">(12 avis)</a></span>
+                    <h4 class="font-shop">Prix : 999€</h4>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
                     <hr class="spacer-10">
                     <div class="row">

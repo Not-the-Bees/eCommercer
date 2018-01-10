@@ -1,9 +1,9 @@
 <?php
-
-Route::get('/', function () {
-    return view('layouts.index');
-});
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', function () {
+    return view('home');
+})->name('home');
+
+// products routes
+Route::get('/products', 'ProductController@index')->name('product.index');

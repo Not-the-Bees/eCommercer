@@ -75,3 +75,15 @@ footer {
 main {
     min-height: calc(100vh - 202px);
 }
+
+.font-ecommercer {
+    color: #2F4F4F;
+ }
+
+.font-slide {
+    color: #C36328;
+}
+
+.btn-shop {
+    width: 200px;
+}

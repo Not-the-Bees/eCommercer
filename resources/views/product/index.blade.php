@@ -5,7 +5,7 @@
 @section('content')
     <div class="row">
         @foreach($products as $product)
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-4 col-sm-6 product-item">
             <div class="card h-100">
                 <a href="#"><img class="card-img-top" src="http://lorempicsum.com/futurama/700/400/6" title="{{ $product->img }}"></a>
                 <div class="card-body">

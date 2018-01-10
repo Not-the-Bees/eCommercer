@@ -51,6 +51,10 @@ footer {
     right: 0;
 }
 
+.product-item {
+    margin-bottom: 20px;
+}
+
 .title-bg {
     margin-top: 10px;
     background-color: #C36328;
@@ -60,5 +64,4 @@ footer {
 
 main.container {
     margin-top: 20px;
-    margin-bottom: 20px;
 }

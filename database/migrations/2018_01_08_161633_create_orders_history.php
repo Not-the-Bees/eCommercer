@@ -15,7 +15,7 @@ class CreateOrdersHistory extends Migration
     {
         Schema::create('orders_history', function (Blueprint $table) {
             $table->increments('id');
-            $table->json('cart');
+            $table->string('cart');
             $table->float('totalPrice');
             $table->string('status');
             $table->integer('user_id');

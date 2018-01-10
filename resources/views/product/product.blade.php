@@ -1,8 +1,9 @@
 
+
 <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
         <div class="modal-header">
-            <h2 class="font-ecommercer">Une Chemise Bleue</h2>
+            <h2 class="font-ecommercer">Robe Bleu-Princesse</h2>
         </div>
         <div class="modal-body">
             <div class="row">
@@ -14,13 +15,10 @@
                             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner" role="listbox">
-                            <!-- Slide One - Set the background image for this slide in the line below -->
                             <div class="carousel-item active" style="background-image: url('img/products/robemid.jpg')">
                             </div>
-                            <!-- Slide Two - Set the background image for this slide in the line below -->
-                            <div class="carousel-item" style="background-image: url('img/products/manteaumid.jpg')">
+                            <div class="carousel-item" style="background-image: url('img/products/robelg.jpg')">
                             </div>
-                            <!-- Slide Three - Set the background image for this slide in the line below -->
                             <div class="carousel-item" style="background-image: url('img/products/vestonmid.jpeg')">
                             </div>
                         </div>
@@ -92,4 +90,3 @@
             </div><!-- end row -->
         </div><!-- end modal-body -->
     </div><!-- end modal-content -->
-</div>

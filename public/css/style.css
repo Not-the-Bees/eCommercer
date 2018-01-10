@@ -61,3 +61,13 @@ footer {
     color: white;
     padding: 8px;
 }
+
+@media (max-width: 967px) {
+    .separator {
+        display: none;
+    }
+    .separator-menu {
+        border-top: 1px solid #97A7A7;
+        max-width: 180px;
+    }
+}

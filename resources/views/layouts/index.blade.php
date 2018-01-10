@@ -23,9 +23,9 @@
                         <li class="nav-item"><a class="nav-link" href="{{ route('home') }}"><i class="fa fa-home"></i> Accueil</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('product.index') }}"><i class="fa fa-shopping-bag"></i> Produits</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa fa-info" aria-hidden="true"></i> Contact</a></li>
-                        <li class="nav-item nav-link"> | </li>
+                        <li class="nav-item nav-link separator"> | </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> Mon Compte</a>
+                            <a class="nav-link dropdown-toggle separator-menu" href="#" id="navbarDropdownAccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> Mon Compte</a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
                                 <a class="dropdown-item" href="portfolio-1-col.html">Suivre mes commandes</a>
                                 <a class="dropdown-item" href="portfolio-1-col.html">Mes bons d'achat/cadeau</a>

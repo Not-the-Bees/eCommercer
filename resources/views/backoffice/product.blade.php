@@ -11,7 +11,7 @@
                         <h4 class="title">Ajouter un produit</h4>
                     </div>
                     <div class="content">
-                        <form method="post" action="{{ route('product.store') }}">
+                        <form method="post" action="{{ route('product.store') }}" enctype="multipart/form-data">
                             {{ csrf_field() }}
                             <div class="row">
                                 <div class="col-md-12">

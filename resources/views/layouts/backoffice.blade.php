@@ -17,7 +17,7 @@
                 <!--   you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple" -->
                 <div class="sidebar-wrapper">
                     <div class="logo">
-                        <a href="/" class="simple-text">
+                        <a href="{{ route('home') }}" class="simple-text">
                             <img src="{{ asset('img/logo.png') }}" width="180px">
                         </a>
                     </div>
@@ -48,7 +48,7 @@
                             </a>
                             <ul class="nav sidenav-second-level collapse" id="collapseComponents">
                                 <li class="secLink">
-                                    <a href="addProduct.html">Ajouter un produit</a>
+                                    <a href="{{ route('product.create') }}">Ajouter un produit</a>
                                 </li>
                                 <li class="secLink">
                                     <a href="#">Gestion des produits</a>

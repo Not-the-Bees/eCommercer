@@ -66,7 +66,7 @@
                                 </div>
                             </div>
 
-                            <button type="submit" class="btn btn-info btn-fill pull-right">Ajouter le produit</button>
+                            <button type="submit" class="btn btn-back pull-right">Ajouter le produit</button>
                             <div class="clearfix"></div>
                         </form>
                     </div>
@@ -89,7 +89,7 @@
                                 </div>
                             </div>
                             <div class="footer">
-                                <button type="submit" class="btn btn-info btn-fill pull-right">Ajouter une catégorie</button>
+                                <button type="submit" class="btn btn-back pull-right">Ajouter une catégorie</button>
                             </div>
                         </form>
                     </div>

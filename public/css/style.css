@@ -101,6 +101,10 @@ main {
     color: #2F4F4F;
 }
 
+.font-slide {
+    color: white;
+}
+
 .font-shop {
     color: #C36328;
 }
@@ -137,11 +141,3 @@ main {
         max-width: 180px;
     }
 }
-
-
-
-
-
-
-
-

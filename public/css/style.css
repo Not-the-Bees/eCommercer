@@ -1,3 +1,6 @@
+
+/* Global Elements */
+
 @font-face {
     font-family: 'AppleChancery';
     font-style: normal;
@@ -11,6 +14,20 @@ body {
     font-size: 18px;
 }
 
+footer {
+    background-color: #2F4F4F;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+main {
+    min-height: calc(100vh - 202px);
+}
+
+
+/* Carousel */
+
 .carousel-item {
     height: 65vh;
     min-height: 300px;
@@ -20,6 +37,29 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    background-size: 100%, 100%;
+    background-image: none;
+}
+
+.carousel-control-next-icon:after {
+    content: '>';
+    font-size: 55px;
+    color: #C36328;
+}
+
+.carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color: #C36328;
+}
+
+
+/* Button */
 
 .btn-primary {
     background-color: #C36328;
@@ -31,6 +71,17 @@ body {
     border-color: #C36328;
     color: #C36328;
 }
+
+.btn-shop {
+    width: 150px;
+}
+
+#hover:hover {
+    color: #FF8300;
+}
+
+
+/* Navbar */
 
 .navbar-nav .nav-link {
     color: white;
@@ -44,23 +95,31 @@ body {
     cursor: pointer;
 }
 
-footer {
-    background-color: #2F4F4F;
-    bottom: 0;
-    left: 0;
-    right: 0;
+
+/* Styling */
+
+.font-ecommercer {
+    color: #2F4F4F;
 }
+
+.font-shop {
+    color: #C36328;
+}
+
+.title-bg {
+     margin-top: 10px;
+     background-color: #C36328;
+     color: white;
+     padding: 8px;
+ }
 
 .product-item {
     margin-bottom: 20px;
 }
 
-.title-bg {
-    margin-top: 10px;
-    background-color: #C36328;
-    color: white;
-    padding: 8px;
-}
+
+
+/* Responsive */
 
 @media (max-width: 967px) {
     .separator {
@@ -72,43 +131,10 @@ footer {
     }
 }
 
-main {
-    min-height: calc(100vh - 202px);
-}
 
-.font-ecommercer {
-    color: #2F4F4F;
- }
 
-.font-shop {
-    color: #C36328;
-}
 
-.btn-shop {
-    width: 150px;
-}
 
-#hover:hover {
-    color: #FF8300;
-}
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    height: 100px;
-    width: 100px;
-    background-size: 100%, 100%;
-    background-image: none;
-}
 
-.carousel-control-next-icon:after
-{
-    content: '>';
-    font-size: 55px;
-    color: #C36328;
-}
 
-.carousel-control-prev-icon:after {
-    content: '<';
-    font-size: 55px;
-    color: #C36328;
-}

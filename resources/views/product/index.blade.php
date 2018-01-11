@@ -163,7 +163,7 @@
 <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
         <div class="modal-header">
-            <h2 class="font-ecommercer">Robe Bleue pour Princesse</h2>
+            <h2 class="font-ecommercer">Robe Bleue pour Gala</h2>
         </div>
         <div class="modal-body">
             <div class="row">

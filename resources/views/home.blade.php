@@ -10,36 +10,37 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner" role="listbox">
-        <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('img/homepage/lionbunny.jpg')">
-            <div class="carousel-caption d-none d-md-block font-shop">
-                <h3>Une équipe dévouée</h3>
-                <p>Pour vous accompagner durant vos achats.</p>
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active" style="background-image: url('img/homepage/lionbunny.jpg'); background-color: black">
+                <div class="carousel-caption d-none d-md-block font-shop">
+                    <h3>Une équipe dévouée</h3>
+                    <p>Pour vous accompagner durant vos achats.</p>
+                </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('img/homepage/puppybunny.jpeg')">
+                <div class="carousel-caption d-none d-md-block font-shop">
+                    <h3>Vêtements pour animaux</h3>
+                    <p>Et vos meilleurs amis à quatre pattes seront enfin au top de la mode.</p>
+                </div>
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('img/homepage/photogrid.jpg')">
+                <div class="carousel-caption d-none d-md-block font-shop">
+                    <h3>Des produits plus conventionnels</h3>
+                    <p>Des trucs et des bidules à n'importe quel prixEn savoir plus.</p>
+                </div>
             </div>
         </div>
-        <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('img/homepage/puppybunny.jpeg')">
-            <div class="carousel-caption d-none d-md-block font-shop">
-                <h3>Vêtements pour animaux</h3>
-                <p>Et vos meilleurs amis à quatre pattes seront enfin au top de la mode.</p>
-            </div>
-        </div>
-        <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('img/homepage/photogrid.jpg')">
-            <div class="carousel-caption d-none d-md-block font-shop">
-                <h3>Des produits plus conventionnels</h3>
-                <p>Des trucs et des bidules à n'importe quel prixEn savoir plus.</p>
-            </div>
-        </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
 </div>
 
 <h2 class="text-center title-bg">Les meilleurs ventes</h2>

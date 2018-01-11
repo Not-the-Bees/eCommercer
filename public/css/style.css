@@ -117,6 +117,14 @@ main {
     margin-bottom: 20px;
 }
 
+.img-top-sales {
+    height: 100%;
+    width: 220px;
+}
+
+.centered {
+    text-align: center;
+}
 
 
 /* Responsive */

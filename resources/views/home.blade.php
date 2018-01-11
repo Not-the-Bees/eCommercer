@@ -28,7 +28,7 @@
         <div class="carousel-item" style="background-image: url('img/homepage/photogrid.jpg')">
             <div class="carousel-caption d-none d-md-block font-shop">
                 <h3>Des produits plus conventionnels</h3>
-                <p>Des trucs et des bidules à n'importe quel prix.</p>
+                <p>Des trucs et des bidules à n'importe quel prixEn savoir plus.</p>
             </div>
         </div>
     </div>
@@ -44,45 +44,59 @@
 
 <h2 class="text-center title-bg">Les meilleurs ventes</h2>
 <div class="row">
-    <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://lorempicsum.com/futurama/700/400/4" alt=""></a>
+    <div class="col-lg-3 col-sm-6 portfolio-item">
+        <div class="card h-100 centered">
+            <a href="#"><img class="card-img-top img-top-sales" src="img/products/hoodieflash.jpg" alt=""></a>
             <div class="card-body">
                 <h4 class="card-title">
-                    <a href="#">Project One</a>
+                    <a href="#">Sweat Flash</a>
                 </h4>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
             </div>
             <div class="card-footer">
-                <a href="#" class="btn btn-primary">Learn More</a>
+                <a href="#" class="btn btn-primary">En savoir plus</a>
             </div>
         </div>
     </div>
-    <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://lorempicsum.com/futurama/700/400/5" alt=""></a>
+    <div class="col-lg-3 col-sm-6 portfolio-item">
+        <div class="card h-100 centered">
+            <a href="#"><img class="card-img-top img-top-sales" src="img/products/hoodiehulk.jpg" alt=""></a>
             <div class="card-body">
                 <h4 class="card-title">
-                    <a href="#">Project Two</a>
+                    <a href="#">Sweat à capuche Spiderman</a>
                 </h4>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
             </div>
             <div class="card-footer">
-                <a href="#" class="btn btn-primary">Learn More</a>
+                <a href="#" class="btn btn-primary">En savoir plus</a>
             </div>
         </div>
     </div>
-    <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://lorempicsum.com/futurama/700/400/6" alt=""></a>
+    <div class="col-lg-3 col-sm-6 portfolio-item">
+        <div class="card h-100 centered">
+            <a href="#"><img class="card-img-top img-top-sales" src="img/products/hoodiestarwars.jpg" alt=""></a>
             <div class="card-body">
                 <h4 class="card-title">
-                    <a href="#">Project Three</a>
+                    <a href="#">Sweat à capuche Star Wars</a>
+                </h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">En savoir plus</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 portfolio-item">
+        <div class="card h-100 centered">
+            <a href="#"><img class="card-img-top img-top-sales" src="img/products/hoodiespiderman.png" alt=""></a>
+            <div class="card-body">
+                <h4 class="card-title">
+                    <a href="#">Sweat Batman</a>
                 </h4>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
             </div>
             <div class="card-footer">
-                <a href="#" class="btn btn-primary">Learn More</a>
+                <a href="#" class="btn btn-primary">En savoir plus</a>
             </div>
         </div>
     </div>

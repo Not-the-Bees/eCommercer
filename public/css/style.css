@@ -75,3 +75,40 @@ footer {
 main {
     min-height: calc(100vh - 202px);
 }
+
+.font-ecommercer {
+    color: #2F4F4F;
+ }
+
+.font-shop {
+    color: #C36328;
+}
+
+.btn-shop {
+    width: 200px;
+}
+
+#hover:hover {
+    color: #FF8300;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    background-size: 100%, 100%;
+    background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+    content: '>';
+    font-size: 55px;
+    color: #C36328;
+}
+
+.carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color: #C36328;
+}

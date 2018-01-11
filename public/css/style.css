@@ -58,7 +58,6 @@ main {
     color: #C36328;
 }
 
-
 /* Button */
 
 .btn-primary {
@@ -102,11 +101,20 @@ main {
     cursor: pointer;
 }
 
+.dropdown-item:hover {
+    background-color: #2F4F4F;
+    color: white;
+    transition: background 0.2s;
+}
 
 /* Styling */
 
 .font-ecommercer {
     color: #2F4F4F;
+}
+
+.font-slide {
+    color: white;
 }
 
 .font-shop {
@@ -124,6 +132,14 @@ main {
     margin-bottom: 20px;
 }
 
+.img-top-sales {
+    height: 100%;
+    width: 220px;
+}
+
+.centered {
+    text-align: center;
+}
 
 
 /* Responsive */
@@ -137,11 +153,3 @@ main {
         max-width: 180px;
     }
 }
-
-
-
-
-
-
-
-

@@ -28,7 +28,7 @@
                         <div class="card-footer">
                             <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
                             <br>
-                            <a href="/product/1" class="btn btn-primary">Voir le produit</a>
+                            <a href="{{ route('fiche.show') }}" class="btn btn-primary">Voir le produit</a>
                         </div>
                     </div>
                 </div>

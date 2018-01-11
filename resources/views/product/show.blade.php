@@ -1,6 +1,5 @@
-
-
-
+@extends('layouts.index')
+@section('content')
 <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
         <div class="modal-header">
@@ -32,13 +31,6 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
-
-
-
-
-
-
-
                 </div>
                 <div class="col-sm-7">
                     <p class="text-gray alt-font">Catégorie : <a id="hover" class="font-shop" href="#">Fringues</a></p>
@@ -92,3 +84,4 @@
         </div><!-- end modal-body -->
     </div><!-- end modal-content -->
 </div>
+@endsection

@@ -163,7 +163,7 @@
 <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
         <div class="modal-header">
-            <h2 class="font-ecommercer">Robe Bleu-Princesse</h2>
+            <h2 class="font-ecommercer">Robe Bleue pour Princesse</h2>
         </div>
         <div class="modal-body">
             <div class="row">
@@ -244,8 +244,8 @@
                         </div><!-- end col -->
                     </div><!-- end row -->
                     <hr class="spacer-10">
-                   <button type="button" class="btn btn-primary btn-md round btn-shop"><i class="fa fa-shopping-basket mr-5"></i>Ajouter au panier</button>
-                   <button type="button" class="btn btn-primary btn-md round btn-shop"><i class="fa fa-heart mr-5"></i>Ajouter à mes favoris</button>
+                   <button type="button" class="btn btn-primary btn-md round btn-shop"><i class="fa fa-shopping-basket mr-1"></i>Ajouter au panier</button>
+                   <button type="button" class="btn btn-primary btn-md round btn-shop"><i class="fa fa-heart mr-1"></i>Ajouter à mes favoris</button>
                 </div><!-- end col -->
             </div><!-- end row -->
         </div><!-- end modal-body -->

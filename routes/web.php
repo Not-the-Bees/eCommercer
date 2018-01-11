@@ -16,4 +16,9 @@ Route::get('/admin/product/create', 'ProductController@create')->name('product.c
 Route::post('/admin/createProduct', 'ProductController@store')->name('product.store');
 Route::post('/admin/createCategory', 'CategoryController@store')->name('category.store');
 
+// contact us route
+Route::get('/contact', 'ContactController@index')->name('contact.index');
+
+
+
 

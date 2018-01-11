@@ -29,7 +29,7 @@ class ProductController extends Controller
     public function create()
     {
         $categories = Category::all();
-        return view('layouts.backoffice', compact('categories'));
+        return view('backoffice.product', compact('categories'));
     }
 
     /**

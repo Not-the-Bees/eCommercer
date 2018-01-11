@@ -6,6 +6,7 @@ use App\Product;
 use App\Category;
 use Faker\Provider\Image;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ProductController extends Controller
 {
@@ -41,16 +42,16 @@ class ProductController extends Controller
     {
         if($request->hasFile('img') && $request->file('img')->isValid())
         {
-            $path = $request->file('img')->store('/public/products');
-            /*Product::create([
+            $path = $request->file('img')->store('public/images/products');
+            Product::create([
                 'name' => $request->input('name'),
                 'description' => $request->input('description'),
-                'img' => $path,
+                'img' => str_replace('public/', '', $path),
                 'price' => $request->input('price'),
                 'qte' => $request->input('qte'),
                 'category_id' => $request->input('category_id'),
                 'rating' => 0.0
-            ]);*/
+            ]);
         }
         return redirect()->route('product.create');
     }

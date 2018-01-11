@@ -17,7 +17,8 @@
             @forelse($products as $product)
                 <div class="col-lg-4 col-md-6 mb-4 product-item">
                     <div class="card h-100">
-                        <a href="#"><img class="card-img-top" src="http://lorempicsum.com/futurama/700/400/6" title="{{ $product->img }}"></a>
+                        <a href="#" class="card-img-top" style="background: url('{{ asset('storage/' . $product->img . '') }}') no-repeat center; height: 350px;">
+                        </a>
                         <div class="card-body">
                             <h4 class="card-title">
                                 <a href="/product">{{ $product->name }}</a>

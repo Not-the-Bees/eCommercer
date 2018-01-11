@@ -94,6 +94,11 @@ main {
     cursor: pointer;
 }
 
+.dropdown-item:hover {
+    background-color: #2F4F4F;
+    color: white;
+    transition: background 0.2s;
+}
 
 /* Styling */
 

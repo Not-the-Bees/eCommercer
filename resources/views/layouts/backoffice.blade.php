@@ -166,12 +166,12 @@
                                                 <div class="col-md-12">
                                                     <div class="form-group">
                                                         <label>Description du produit</label>
-                                                        <textarea name="description" rows="5" class="form-control" placeholder="Charactéristiques techniques" value=""></textarea>
+                                                        <textarea name="description" rows="5" class="form-control" placeholder="Caractéristiques techniques" value=""></textarea>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <button type="submit" class="btn btn-info btn-fill pull-right">Ajouter le produit</button>
+                                            <button type="submit" class="btn btn-back pull-right">Ajouter le produit</button>
                                             <div class="clearfix"></div>
                                         </form>
                                     </div>
@@ -194,7 +194,7 @@
                                                 </div>
                                             </div>
                                             <div class="footer">
-                                                <button type="submit" class="btn btn-info btn-fill pull-right">Ajouter une catégorie</button>
+                                                <button type="submit" class="btn btn-back pull-right">Ajouter une catégorie</button>
                                             </div>
                                         </form>
                                     </div>

@@ -55,7 +55,7 @@
                 <h4 class="card-title">
                     <a href="#">Sweat Flash</a>
                 </h4>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+                <h5>159.00€</h5>
             </div>
             <div class="card-footer">
                 <a href="#" class="btn btn-primary">En savoir plus</a>
@@ -69,7 +69,7 @@
                 <h4 class="card-title">
                     <a href="#">Sweat à capuche Hulk</a>
                 </h4>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                <h5>59.00€</h5>
             </div>
             <div class="card-footer">
                 <a href="#" class="btn btn-primary">En savoir plus</a>
@@ -83,7 +83,7 @@
                 <h4 class="card-title">
                     <a href="#">Sweat à capuche Star Wars</a>
                 </h4>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                <h5>99.00€</h5>
             </div>
             <div class="card-footer">
                 <a href="#" class="btn btn-primary">En savoir plus</a>
@@ -97,7 +97,7 @@
                 <h4 class="card-title">
                     <a href="#">Sweat Spiderman</a>
                 </h4>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
+                <h5>119.00€</h5>
             </div>
             <div class="card-footer">
                 <a href="#" class="btn btn-primary">En savoir plus</a>

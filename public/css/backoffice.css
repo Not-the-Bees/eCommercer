@@ -14,6 +14,9 @@
 
  */
 /*      light colors         */
+
+
+
 @keyframes spin {
     from {
         transform: rotate(0deg);
@@ -124,6 +127,18 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 h1 .subtitle {
     display: block;
     margin: 0 0 30px;
+}
+
+.btn-back {
+    background-color: #1675A8;
+    border-color: #1675A8;
+    color: white;
+}
+
+.btn-back:hover {
+    background-color: white;
+    border-color: #1675A8;
+    color: #1675A8;
 }
 
 .text-muted {
@@ -542,21 +557,14 @@ input:focus {
 
 .btn {
     border-width: 2px;
-    background-color: transparent;
     font-weight: 400;
     opacity: 0.8;
     filter: alpha(opacity=80);
     padding: 8px 16px;
-    border-color: #888888;
-    color: #888888;
+
 }
 
-.btn:hover, .btn:focus, .btn:active, .btn.active,
-.open > .btn.dropdown-toggle {
-    background-color: transparent;
-    color: #777777;
-    border-color: #777777;
-}
+
 
 .btn.disabled, .btn.disabled:hover, .btn.disabled:focus, .btn.disabled.focus, .btn.disabled:active, .btn.disabled.active, .btn:disabled, .btn:disabled:hover, .btn:disabled:focus, .btn:disabled.focus, .btn:disabled:active, .btn:disabled.active, .btn[disabled], .btn[disabled]:hover, .btn[disabled]:focus, .btn[disabled].focus, .btn[disabled]:active, .btn[disabled].active,
 fieldset[disabled] .btn,

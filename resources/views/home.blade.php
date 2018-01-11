@@ -11,24 +11,24 @@
     </ol>
     <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('img/homepage/puppy.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-                <h3>First Slide</h3>
-                <p>This is a description for the first slide.</p>
+        <div class="carousel-item active" style="background-image: url('img/homepage/lionbunny.jpg')">
+            <div class="carousel-caption d-none d-md-block font-shop">
+                <h3>Une équipe dévouée</h3>
+                <p>Pour vous accompagner durant vos achats.</p>
             </div>
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('img/homepage/puppybunny.jpeg')">
-            <div class="carousel-caption d-none d-md-block">
-                <h3>Second Slide</h3>
-                <p>This is a description for the second slide.</p>
+            <div class="carousel-caption d-none d-md-block font-shop">
+                <h3>Vêtements pour animaux</h3>
+                <p>Et vos meilleurs amis à quatre pattes seront enfin au top de la mode.</p>
             </div>
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('img/homepage/photogrid.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-                <h3>Third Slide</h3>
-                <p>This is a description for the third slide.</p>
+            <div class="carousel-caption d-none d-md-block font-shop">
+                <h3>Des produits plus conventionnels</h3>
+                <p>Des trucs et des bidules à n'importe quel prix.</p>
             </div>
         </div>
     </div>

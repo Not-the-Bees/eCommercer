@@ -7,3 +7,6 @@ Route::get('/', function () {
 
 // products routes
 Route::get('/products', 'ProductController@index')->name('product.index');
+
+// backoffices routes
+Route::get('/admin', 'BackofficeController@index')->name('admin.index');

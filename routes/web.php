@@ -7,7 +7,7 @@ Route::get('/', function () {
 
 // products routes
 Route::get('/products', 'ProductController@index')->name('product.index');
-Route::get('/products/show', 'ProductController@show')->name('product.show');
+Route::get('/product/{product}', 'ProductController@show')->name('product.show');
 
 
 // backoffices routes

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Product;
 use App\Category;
+use Faker\Provider\Image;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -38,15 +39,19 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        Product::create(array(
-            'name' => $request->input('name'),
-            'description' => $request->input('description'),
-            'img' => $request->input('img'),
-            'price' => $request->input('price'),
-            'qte' => $request->input('qte'),
-            'category_id' => $request->input('category_id'),
-            'rating' => 0.0
-        ));
+        if($request->hasFile('img') && $request->file('img')->isValid())
+        {
+            $path = $request->file('img')->store('/public/products');
+            /*Product::create([
+                'name' => $request->input('name'),
+                'description' => $request->input('description'),
+                'img' => $path,
+                'price' => $request->input('price'),
+                'qte' => $request->input('qte'),
+                'category_id' => $request->input('category_id'),
+                'rating' => 0.0
+            ]);*/
+        }
         return redirect()->route('product.create');
     }
 
@@ -58,7 +63,8 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        return view('product.show', compact('products'));
+        $title = "Produit - $product->name";
+        return view('product.show', compact('product', 'title'));
     }
 
     /**

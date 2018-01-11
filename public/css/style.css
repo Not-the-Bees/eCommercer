@@ -72,8 +72,15 @@ main {
     color: #C36328;
 }
 
-.btn-shop {
-    width: 150px;
+.btn-primary:not([disabled]):not(.disabled).active, .btn-primary:not([disabled]):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    background-color: white;
+    border-color: #C36328;
+    color: #C36328;
+    box-shadow: none;
+}
+
+.btn-primary:focus {
+    box-shadow: none;
 }
 
 #hover:hover {

@@ -116,7 +116,7 @@
                                         <h4 class="title">Ajouter un produit</h4>
                                     </div>
                                     <div class="content">
-                                        <form method="post" action="{{ route('product.store') }}">
+                                        <form method="post" action="{{ route('product.store') }}" enctype="multipart/form-data">
                                             {{ csrf_field() }}
                                             <div class="row">
                                                 <div class="col-md-12">
@@ -146,7 +146,7 @@
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label>Ajouter une image</label>
-                                                        <input class="btnAddProd" name="img" type="file" name="pic" accept="image/*">
+                                                        <input type="file" name="img" class="btnAddProd">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">

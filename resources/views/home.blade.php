@@ -67,7 +67,7 @@
             <a href="#"><img class="card-img-top img-top-sales" src="img/products/hoodiehulk.jpg" alt=""></a>
             <div class="card-body">
                 <h4 class="card-title">
-                    <a href="#">Sweat à capuche Spiderman</a>
+                    <a href="#">Sweat à capuche Hulk</a>
                 </h4>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
             </div>
@@ -95,7 +95,7 @@
             <a href="#"><img class="card-img-top img-top-sales" src="img/products/hoodiespiderman.png" alt=""></a>
             <div class="card-body">
                 <h4 class="card-title">
-                    <a href="#">Sweat Batman</a>
+                    <a href="#">Sweat Spiderman</a>
                 </h4>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
             </div>

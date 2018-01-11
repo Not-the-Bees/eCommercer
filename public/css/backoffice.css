@@ -69,7 +69,6 @@ td,
 button.close {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: "Roboto","Helvetica Neue",Arial,sans-serif;
     font-weight: 400;
 }
 
@@ -160,6 +159,8 @@ body,
 
 body {
     background: rgba(203, 203, 210, 0.15);
+    font-family: 'PT Sans Narrow', 'sans-serif';
+    font-size: 18px;
 }
 
 a {
@@ -281,7 +282,6 @@ input:focus {
     margin: 10px 10px;
     color: #FFFFFF;
     line-height: 20px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .sidebar .logo .simple-text {
@@ -380,7 +380,6 @@ input:focus {
     margin: 10px 10px;
     color: #FFFFFF;
     line-height: 20px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .sidebar .logo .simple-text {

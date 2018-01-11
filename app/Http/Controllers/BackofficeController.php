@@ -13,7 +13,7 @@ class BackofficeController extends Controller
      */
     public function index()
     {
-        return view('layouts.backoffice');
+        return redirect()->route('product.create');
     }
 
     /**

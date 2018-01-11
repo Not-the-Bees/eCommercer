@@ -27,6 +27,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle separator-menu" href="#" id="navbarDropdownAccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> Mon Compte</a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                                <a class="dropdown-item" href="{{ route('admin.index') }}">Backoffice</a>
                                 <a class="dropdown-item" href="portfolio-1-col.html">Suivre mes commandes</a>
                                 <a class="dropdown-item" href="portfolio-1-col.html">Mes bons d'achat/cadeau</a>
                                 <a class="dropdown-item" href="portfolio-1-col.html">Mes informations</a>

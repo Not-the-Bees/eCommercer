@@ -6,8 +6,7 @@
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
         <meta name="viewport" content="width=device-width" />
         <title>@yield('title')</title>
-
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow">
         <link rel="stylesheet" href="{{ asset('css/bootstrap4.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
         <link rel="stylesheet" href="{{ asset('css/backoffice.css') }}">
@@ -117,12 +116,13 @@
                                         <h4 class="title">Ajouter un produit</h4>
                                     </div>
                                     <div class="content">
-                                        <form>
+                                        <form method="post" action="{{ route('product.store') }}">
+                                            {{ csrf_field() }}
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <div class="form-group">
                                                         <label>Titre du produit</label>
-                                                        <input type="text" class="form-control" placeholder="Titre" value="">
+                                                        <input type="text" name="name" class="form-control" placeholder="Titre" value="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -131,13 +131,13 @@
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label>Prix du produit</label>
-                                                        <input type="number" class="form-control" placeholder="Prix" value="">
+                                                        <input type="number" name="price" class="form-control" placeholder="Prix" value="">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label>Quantité disponible</label>
-                                                        <input type="number" class="form-control" placeholder="Quantité" value="">
+                                                        <input type="number" name="qte" class="form-control" placeholder="Quantité" value="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -146,17 +146,17 @@
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label>Ajouter une image</label>
-                                                        <input class="btnAddProd" type="file" name="pic" accept="image/*">
+                                                        <input class="btnAddProd" name="img" type="file" name="pic" accept="image/*">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label>Choisir une catégorie</label>
-                                                        <select class="form-control" id="inlineFormCustomSelect">
+                                                        <select name="category_id" class="form-control" id="inlineFormCustomSelect">
                                                             <option selected>Catégorie</option>
-                                                            <option value="1">One</option>
-                                                            <option value="2">Two</option>
-                                                            <option value="3">Three</option>
+                                                            @foreach($categories as $category)
+                                                                <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                                            @endforeach
                                                         </select>
                                                     </div>
                                                 </div>
@@ -166,7 +166,7 @@
                                                 <div class="col-md-12">
                                                     <div class="form-group">
                                                         <label>Description du produit</label>
-                                                        <textarea rows="5" class="form-control" placeholder="Charactéristiques techniques" value=""></textarea>
+                                                        <textarea name="description" rows="5" class="form-control" placeholder="Charactéristiques techniques" value=""></textarea>
                                                     </div>
                                                 </div>
                                             </div>
@@ -183,12 +183,13 @@
                                         <h4 class="title">Ajouter une catégorie</h4>
                                     </div>
                                     <div class="content">
-                                        <form>
+                                        <form action="{{ route('category.store') }}" method="post">
+                                            {{ csrf_field() }}
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <div class="form-group">
                                                         <label>Nom de la catégorie</label>
-                                                        <input type="text" class="form-control" placeholder="Nom" value="">
+                                                        <input type="text" name="name" class="form-control" placeholder="Nom" value="">
                                                     </div>
                                                 </div>
                                             </div>

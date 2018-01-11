@@ -30,7 +30,7 @@
             <div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('img/homepage/photogrid.jpg'); background-size:cover; background-repeat:no-repeat;">
                 <div class="carousel-caption d-none d-md-block font-slide">
                     <h3>Des produits plus conventionnels</h3>
-                    <p>Des trucs et des bidules à n'importe quel prixEn savoir plus.</p>
+                    <p>Des trucs et des bidules à n'importe quel prix.</p>
                     <a href="#" class="btn btn-primary">En savoir plus</a>
                 </div>
             </div>

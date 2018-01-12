@@ -16,7 +16,7 @@
         <?php $i = 0; ?>
         @foreach($slides as $slide)
             <div class="carousel-item {{ $i == 0 ? 'active' : '' }}" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('{{ asset('storage/' . $slide->img . '') }}'); background-size:cover; background-repeat:no-repeat;">
-                <div class="carousel-caption d-none d-md-block font-slide">
+                <div class="carousel-caption font-slide">
                     <h3>{{ $slide->title }}</h3>
                     <p>{{ $slide->description }}</p>
                     <a href="{{ $slide->button_action }}" class="btn btn-primary">{{ $slide->button_title }}</a>

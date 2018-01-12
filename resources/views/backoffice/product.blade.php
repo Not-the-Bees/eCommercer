@@ -61,7 +61,8 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label>Description du produit</label>
-                                        <textarea name="description" rows="5" class="form-control" placeholder="Charactéristiques techniques" value=""></textarea>
+                                        <textarea name="description" id="article-ckeditor" rows="5" class="form-control" placeholder="Caractéristiques techniques" value="">
+                                        </textarea>
                                     </div>
                                 </div>
                             </div>

@@ -114,6 +114,12 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusantium alias a
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae modi nostrum odit quaerat saepe! Amet ea saepe temporibus. Ea error fugit incidunt odit quisquam. Autem cupiditate eius exercitationem libero
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eaque eveniet fugiat libero quam qui saepe. Amet autem beatae dignissimos eveniet illum iste magnam pariatur reiciendis. Est officiis, rem! Tempora.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad autem commodi delectus, doloremque doloribus ducimus, earum, eligendi est et eveniet expedita id nam optio perspiciatis quia veritatis voluptas voluptates?</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur assumenda atque blanditiis cum doloremque dolorum enim facere impedit ipsum magni molestiae omnis possimus qui quos reprehenderit, sit totam ullam?
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit inventore quo repellendus vero! Aliquam at debitis facere magnam magni maxime molestiae nam non officia praesentium velit veritatis vero voluptate, voluptates.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid cupiditate hic laudantium nam numquam quia rem? Ea exercitationem id iure molestiae mollitia, necessitatibus pariatur quibusdam sint tempora tempore voluptates.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cum est eum molestiae quas! Adipisci blanditiis eligendi esse facilis magni molestiae nam, omnis quis quos repellendus reprehenderit, similique veniam voluptatem.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor modi necessitatibus nisi reprehenderit. Animi asperiores commodi, debitis expedita hic in nihil officiis quisquam temporibus tenetur! Earum eum iure mollitia vero!
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dolores enim est fuga maiores natus odio, porro provident quae quisquam similique tenetur ut voluptatum! Animi consequuntur id quibusdam repudiandae veniam!</p>
 
 
 <div class="carousel-item active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('img/homepage/idees-cadeaux.png'); background-size:cover; background-repeat:no-repeat; margin-bottom: 15px">

@@ -1,6 +1,6 @@
 @extends('layouts.backoffice')
 
-@section('title', 'Backoffice - Slider')
+@section('title', 'Backoffice - Produit')
 
 @section ('content')
     <div class="container-fluid">

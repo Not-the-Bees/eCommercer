@@ -23,7 +23,7 @@ class BackofficeController extends Controller
      */
     public function create()
     {
-        //
+        return view('backoffice.interface');
     }
 
     /**

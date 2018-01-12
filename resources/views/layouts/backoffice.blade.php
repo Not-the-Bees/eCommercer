@@ -29,16 +29,24 @@
                                 <p>Dashboard</p>
                             </a>
                         </li>
+                        <li data-toggle="tooltip" data-placement="right" title="Components">
+                            <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents2" data-parent="#exampleAccordion">
+                                <i class="fa fa-desktop" aria-hidden="true"></i>
+                                <p>Interface<b class="caret"></b></p>
+                            </a>
+                            <ul class="nav sidenav-second-level collapse" id="collapseComponents2">
+                                <li class="secLink">
+                                    <a href="{{ route('slide.index') }}">Gestion du slideshow</a>
+                                </li>
+                                <li class="secLink">
+                                    <a href="{{ route('content.index') }}">Gestion du contenu</a>
+                                </li>
+                            </ul>
+                        </li>
                         <li>
                             <a href="user.html">
                                 <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                                 <p>User Profile</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="table.html">
-                                <i class="fa fa-table" aria-hidden="true"></i>
-                                <p>Table List</p>
                             </a>
                         </li>
                         <li class="active" data-toggle="tooltip" data-placement="right" title="Components">
@@ -54,6 +62,12 @@
                                     <a href="#">Gestion des produits</a>
                                 </li>
                             </ul>
+                        </li>
+                        <li>
+                            <a href="table.html">
+                                <i class="fa fa-table" aria-hidden="true"></i>
+                                <p>Table List</p>
+                            </a>
                         </li>
                     </ul>
                 </div>

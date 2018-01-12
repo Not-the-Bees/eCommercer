@@ -3,57 +3,38 @@
 @section('title', 'Contact')
 
 @section('content')
-<div class="container-fluid">
-    <div class="row-fluid" >
-        <div class="col-md-offset-4 col-md-4" id="box">
-            <h2>Contact Us!</h2>
-            <hr>
-            <form class="form-horizontal" action=" " method="" id="contact_form">
-                <fieldset>
-                    <!-- Form Name -->
-                    <!-- Text input-->
-                    <div class="form-group">
-                        <div class="col-md-12">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input name="first_name" placeholder="Name" class="form-control" type="text">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Text input-->
-                    <div class="form-group">
-                        <div class="col-md-12">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Text input-->
-                    <div class="form-group">
-                        <div class="col-md-12">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                                <input name="phone" placeholder="(005)501-120101" class="form-control" type="text">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Text input-->
-                    <div class="form-group">
-                        <div class="col-md-12 inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                                <textarea class="form-control" name="comment" placeholder="Message"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-12">
-                            <button type="submit" class="btn btn-warning pull-right">Send <span class="glyphicon glyphicon-send"></span></button>
-                        </div>
-                    </div>
-                </fieldset>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-5">
+            <h3>Address</h3>
+            <p>
+                Av. Greenville 987,<br>
+                New York,<br>
+                90873<br>
+                United States
+            </p>
+        </div>
+
+        <div class="col-lg-7">
+            <h3>Drop Us A Line</h3>
+            <br>
+            <form role="form" action="#" method="post" enctype="plain">
+                <div class="form-group">
+                    <label for="name1">Your Name</label>
+                    <input name="Name" class="form-control" id="name1" placeholder="Your Name" type="name">
+                </div>
+                <div class="form-group">
+                    <label for="email1">Email address</label>
+                    <input name="Mail" class="form-control" id="email1" placeholder="Enter email" type="email">
+                </div>
+                <div class="form-group">
+                    <label>Your Text</label>
+                    <textarea class="form-control" name="Message" rows="3"></textarea>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-large btn-success">SUBMIT</button>
             </form>
         </div>
     </div>
+</div>
 @endsection

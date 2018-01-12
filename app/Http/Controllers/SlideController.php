@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Slide;
 use Illuminate\Http\Request;
 
-class BackofficeController extends Controller
+class SlideController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,8 @@ class BackofficeController extends Controller
      */
     public function index()
     {
-        return view('layouts.backoffice');
+        $slides = Slide::all();
+        return view('backoffice.slideshow.index', compact('slides'));
     }
 
     /**
@@ -26,11 +28,6 @@ class BackofficeController extends Controller
         //
     }
 
-    public function content()
-    {
-        return view('backoffice.content.index');
-    }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -39,16 +36,27 @@ class BackofficeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if($request->hasFile('img') && $request->file('img')->isValid())
+        {
+            $path = $request->file('img')->store('public/images/slide');
+            Slide::create([
+                'title' => $request->input('title'),
+                'description' => $request->input('description'),
+                'img' => str_replace('public/', '', $path),
+                'button_title' => $request->input('button_title'),
+                'button_action' => $request->input('button_action')
+            ]);
+        }
+        return redirect()->route('slide.index');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Slide  $slide
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Slide $slide)
     {
         //
     }
@@ -56,10 +64,10 @@ class BackofficeController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Slide  $slide
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Slide $slide)
     {
         //
     }
@@ -68,10 +76,10 @@ class BackofficeController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Slide  $slide
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Slide $slide)
     {
         //
     }
@@ -79,10 +87,10 @@ class BackofficeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Slide  $slide
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Slide $slide)
     {
         //
     }

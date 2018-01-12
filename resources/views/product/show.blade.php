@@ -16,7 +16,7 @@
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         </ol>
                         <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active" style="background-image: url('{{ asset('storage/' . $product->img . '') }}')">
+                            <div class="carousel-item active" style="color: white; background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ asset('storage/' . $product->img . '') }}'); background-position: center center;">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

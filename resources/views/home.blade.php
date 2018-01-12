@@ -3,37 +3,27 @@
 @section('title', 'Home')
 
 @section('content')
+@if($slides->isNotEmpty())
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <?php $i = 0; ?>
+        @foreach($slides as $slide)
+            <li data-target="#carouselExampleIndicators" data-slide-to="{{ $slide->id }}" class="{{ $i == 0 ? 'active' : '' }}"></li>
+            <?php $i++; ?>
+        @endforeach
     </ol>
     <div class="carousel-inner" role="listbox">
-        <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('img/homepage/lionbunny.jpg'); background-size:cover; background-repeat:no-repeat;">
-            <div class="carousel-caption d-none d-md-block font-slide">
-                <h3>Une équipe dévouée</h3>
-                <p>Pour vous accompagner durant vos achats.</p>
-                <a href="#" class="btn btn-primary">En savoir plus</a>
+        <?php $i = 0; ?>
+        @foreach($slides as $slide)
+            <div class="carousel-item {{ $i == 0 ? 'active' : '' }}" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('{{ asset('storage/' . $slide->img . '') }}'); background-size:cover; background-repeat:no-repeat;">
+                <div class="carousel-caption d-none d-md-block font-slide">
+                    <h3>{{ $slide->title }}</h3>
+                    <p>{{ $slide->description }}</p>
+                    <a href="{{ $slide->button_action }}" class="btn btn-primary">{{ $slide->button_title }}</a>
+                </div>
             </div>
-        </div>
-        <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('img/homepage/puppybunny.jpeg'); background-size:cover; background-repeat:no-repeat;">
-            <div class="carousel-caption d-none d-md-block font-slide">
-                <h3>Vêtements pour animaux</h3>
-                <p>Et vos meilleurs amis à quatre pattes seront enfin au top de la mode.</p>
-                <a href="#" class="btn btn-primary">En savoir plus</a>
-            </div>
-        </div>
-        <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('img/homepage/photogrid.jpg'); background-size:cover; background-repeat:no-repeat;">
-            <div class="carousel-caption d-none d-md-block font-slide">
-                <h3>Des produits plus conventionnels</h3>
-                <p>Des trucs et des bidules à n'importe quel prix.</p>
-                <a href="#" class="btn btn-primary">En savoir plus</a>
-            </div>
-        </div>
+            <?php $i++; ?>
+        @endforeach
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -43,8 +33,8 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
-
 </div>
+@endif
 
 <h2 class="text-center title-bg">Les meilleurs ventes</h2>
 <div class="row">

@@ -12,10 +12,13 @@ Route::get('/product/{product}', 'ProductController@show')->name('product.show')
 
 // backoffices routes
 Route::get('/admin', 'BackofficeController@index')->name('admin.index');
-Route::get('/admin/slideshow/create', 'BackofficeController@create')->name('slideshow.create');
+// products
 Route::get('/admin/product/create', 'ProductController@create')->name('product.create');
 Route::post('/admin/createProduct', 'ProductController@store')->name('product.store');
 Route::post('/admin/createCategory', 'CategoryController@store')->name('category.store');
+
+// slide show
+Route::get('/admin/slideshow', 'SlideController@index')->name('slide.index');
 
 // contact us route
 Route::get('/contact', 'ContactController@index')->name('contact.index');

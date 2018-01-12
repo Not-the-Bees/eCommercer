@@ -36,7 +36,7 @@
                             </a>
                             <ul class="nav sidenav-second-level collapse" id="collapseComponents2">
                                 <li class="secLink">
-                                    <a href="{{ route('slideshow.create') }}">Gestion du slideshow</a>
+                                    <a href="{{ route('slide.index') }}">Gestion du slideshow</a>
                                 </li>
                                 <li class="secLink">
                                     <a href="#">Gestion du contenu</a>

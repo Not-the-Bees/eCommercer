@@ -12,7 +12,7 @@
     <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
         <div class="carousel-item active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('img/homepage/lionbunny.jpg'); background-size:cover; background-repeat:no-repeat;">
-            <div class="carousel-caption d-none d-md-block font-slide">
+            <div class="carousel-caption font-slide">
                 <h3>Une équipe dévouée</h3>
                 <p>Pour vous accompagner durant vos achats.</p>
                 <a href="#" class="btn btn-primary">En savoir plus</a>
@@ -20,15 +20,15 @@
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('img/homepage/puppybunny.jpeg'); background-size:cover; background-repeat:no-repeat;">
-            <div class="carousel-caption d-none d-md-block font-slide">
+            <div class="carousel-caption font-slide">
                 <h3>Vêtements pour animaux</h3>
                 <p>Et vos meilleurs amis à quatre pattes seront enfin au top de la mode.</p>
                 <a href="#" class="btn btn-primary">En savoir plus</a>
             </div>
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('img/homepage/photogrid.jpg'); background-size:cover; background-repeat:no-repeat;">
-            <div class="carousel-caption d-none d-md-block font-slide">
+        <div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('img/homepage/photogrid.jpg'); background-size:cover; background-repeat:no-repeat">
+            <div class="carousel-caption font-slide">
                 <h3>Des produits plus conventionnels</h3>
                 <p>Des trucs et des bidules à n'importe quel prix.</p>
                 <a href="#" class="btn btn-primary">En savoir plus</a>
@@ -92,7 +92,7 @@
     </div>
     <div class="col-lg-3 col-sm-6 portfolio-item">
         <div class="card h-100 centered">
-            <a href="#"><img class="card-img-top img-top-sales" src="img/products/hoodiespiderman.png" alt=""></a>
+            <a href="#"><img class="card-img-top img-top-sales" src="img/products/hoodiespiderman.png"></a>
             <div class="card-body">
                 <h4 class="card-title">
                     <a href="#">Sweat Spiderman</a>
@@ -103,6 +103,24 @@
                 <a href="#" class="btn btn-primary">En savoir plus</a>
             </div>
         </div>
+    </div>
+</div>
+
+<h2 class="text-center title-bg">Pour être mieux référencé</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, dignissimos dolor esse est eveniet illum iste labore libero maiores pariatur perspiciatis qui temporibus tenetur vel vero. Aliquid dolor neque perspiciatis!
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad blanditiis consequatur dolorem doloremque ducimus earum eum, ipsum labore laborum molestiae nesciunt, numquam officiis praesentium recusandae rem sint tenetur veritatis voluptates!
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores ea eveniet illo maiores nisi repudiandae? Accusamus autem dolorem fugit in incidunt, laborum nam nisi nostrum odio recusandae! Pariatur, voluptas.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusantium alias animi consequuntur dignissimos eligendi enim eveniet iusto magnam necessitatibus nulla obcaecati pariatur provident quaerat, quia quos tempore veniam, veritatis?
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae modi nostrum odit quaerat saepe! Amet ea saepe temporibus. Ea error fugit incidunt odit quisquam. Autem cupiditate eius exercitationem libero
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eaque eveniet fugiat libero quam qui saepe. Amet autem beatae dignissimos eveniet illum iste magnam pariatur reiciendis. Est officiis, rem! Tempora.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad autem commodi delectus, doloremque doloribus ducimus, earum, eligendi est et eveniet expedita id nam optio perspiciatis quia veritatis voluptas voluptates?</p>
+
+
+<div class="carousel-item active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('img/homepage/idees-cadeaux.png'); background-size:cover; background-repeat:no-repeat; margin-bottom: 15px">
+    <div class="carousel-caption font-slide">
+        <h3>Plein d'idées cadeaux</h3>
+        <p>Pour les gens sans inspiration !</p>
+        <a href="#" class="btn btn-primary">Voir les idées cadeaux</a>
     </div>
 </div>
 @endsection

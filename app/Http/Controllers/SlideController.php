@@ -14,7 +14,8 @@ class SlideController extends Controller
      */
     public function index()
     {
-        return view('backoffice.slideshow.index');
+        $slides = Slide::all();
+        return view('backoffice.slideshow.index', compact('slides'));
     }
 
     /**
@@ -35,7 +36,18 @@ class SlideController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if($request->hasFile('img') && $request->file('img')->isValid())
+        {
+            $path = $request->file('img')->store('public/images/slide');
+            Slide::create([
+                'title' => $request->input('title'),
+                'description' => $request->input('description'),
+                'img' => str_replace('public/', '', $path),
+                'button_title' => $request->input('button_title'),
+                'button_action' => $request->input('button_action')
+            ]);
+        }
+        return redirect()->route('slide.index');
     }
 
     /**

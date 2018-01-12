@@ -1,9 +1,7 @@
 <?php
 Auth::routes();
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', 'PagesController@home')->name('home');
 
 // products routes
 Route::get('/products', 'ProductController@index')->name('product.index');
@@ -19,6 +17,7 @@ Route::post('/admin/createCategory', 'CategoryController@store')->name('category
 
 // slide show routes
 Route::get('/admin/slideshow', 'SlideController@index')->name('slide.index');
+Route::post('/admin/slideshow/create', 'SlideController@store')->name('slide.store');
 
 // content routes
 Route::get('/admin/content', 'BackofficeController@content')->name('content.index');

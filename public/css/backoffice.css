@@ -3962,6 +3962,18 @@ fieldset[disabled] .btn-neutral.active {
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
 
+.pad {
+    padding: 10px;
+}
+
+.box-body {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 10px;
+}
+
 .widget-user .widget-user-header {
     padding: 20px;
     height: 100px;
@@ -4015,4 +4027,14 @@ fieldset[disabled] .btn-neutral.active {
 
 .box .border-right {
     border-right: 1px solid #f4f4f4;
+}
+
+.btn.jumbo {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 14px 24px;
+  margin-right: 10px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
 }

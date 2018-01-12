@@ -60,6 +60,10 @@ main {
 
 /* Button */
 
+.btn {
+    cursor: pointer;
+}
+
 .btn-primary {
     background-color: #C36328;
     border-color: #C36328;

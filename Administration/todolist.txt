@@ -1,0 +1,15 @@
+To do list sur le projet eCommercer.
+
+- Modale sur ID et boutton "Créer un slide" pour la création / gestion des slides du SlideShow.
+
+- Ajouter plusieurs boutton pour ajouter images sur fiche produit
+
+- Editer / Supprimer un slide / produit
+
+- WYSIWYG CKEditor + boutton image de la homepage
+
+- Gestion des sessions (Utilisateurs / Admins)
+	- Mise en place du panier client
+	- Mise en place de la page informations personnelles pour le client
+	- Permettre à l'admin d'ajouter des admins
+

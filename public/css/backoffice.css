@@ -1967,6 +1967,12 @@ fieldset[disabled] .btn-neutral.active {
     background-color: transparent;
 }
 
+.nav-link:hover {
+    margin-right: 100%;
+    margin-left: 100%;
+}
+
+
 .footer {
     background-color: #FFFFFF;
     line-height: 20px;

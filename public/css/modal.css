@@ -1,0 +1,103 @@
+.button {
+  color: #fff;
+  background-color: #53A318;
+  padding: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: normal;
+  display: inline-block;
+}
+
+.modal-checkbox {
+  display: none;
+}
+
+.modal-overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.modal-content {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  padding: 2em 2em 1em 2em;
+  overflow-x: scroll;
+}
+
+.modal-close {
+  position: absolute;
+  top: .25em;
+  right: .5em;
+  font-size: 2em;
+  line-height: 1;
+  font-weight: 300;
+  color: #666;
+  cursor: pointer;
+}
+
+.modal-title {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin: 0 0 .66666em 0;
+}
+
+.modal-checkbox:checked ~ .modal-overlay,
+.modal-checkbox:checked ~ .modal-content {
+  display: block;
+  z-index: 1000;
+}
+
+@media (min-width: 600px) {
+  .modal-content {
+    max-width: 600px;
+    top: 10%;
+    right: 0;
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+    max-height: 80%;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}

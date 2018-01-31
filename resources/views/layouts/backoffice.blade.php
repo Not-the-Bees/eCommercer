@@ -7,9 +7,10 @@
         <meta name="viewport" content="width=device-width" />
         <title>@yield('title')</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow">
-        <link rel="stylesheet" href="{{ asset('css/bootstrap4.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
         <link rel="stylesheet" href="{{ asset('css/backoffice.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/modal.css') }}">
     </head>
     <body>
         <div class="wrapper">
@@ -24,17 +25,22 @@
 
                     <ul class="nav">
                         <li>
-                            <a href="dashboard.html">
+                            <a class="nav-link" href="dashboard.html">
                                 <i class="fa fa-tachometer" aria-hidden="true"></i>
                                 <p>Dashboard</p>
                             </a>
                         </li>
-                        <li data-toggle="tooltip" data-placement="right" title="Components">
-                            <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents2" data-parent="#exampleAccordion">
-                                <i class="fa fa-desktop" aria-hidden="true"></i>
-                                <p>Interface<b class="caret"></b></p>
-                            </a>
-                            <ul class="nav sidenav-second-level collapse" id="collapseComponents2">
+                        <li class="dropdown">
+                                <button class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-desktop" aria-hidden="true"></i>
+                                    <p>Interface</p>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            <ul class="collapse" id="collapseExample">
                                 <li class="secLink">
                                     <a href="{{ route('slide.index') }}">Gestion du slideshow</a>
                                 </li>
@@ -44,19 +50,19 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="user.html">
+                            <a class="nav-link" href="user.html">
                                 <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                                 <p>User Profile</p>
                             </a>
                         </li>
-                        <li class="active" data-toggle="tooltip" data-placement="right" title="Components">
-                            <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+                        <li>
+                            <a class="nav-link" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
                                 <i class="fa fa-shopping-basket" aria-hidden="true"></i>
-                                <p>Products<b class="caret"></b></p>
+                                <p>Products</p>
                             </a>
                             <ul class="nav sidenav-second-level collapse" id="collapseComponents">
                                 <li class="secLink">
-                                    <a href="{{ route('product.create') }}">Ajouter un produit</a>
+                                    <a  href="{{ route('product.create') }}">Ajouter un produit</a>
                                 </li>
                                 <li class="secLink">
                                     <a href="#">Gestion des produits</a>
@@ -64,7 +70,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="table.html">
+                            <a class="nav-link" href="table.html">
                                 <i class="fa fa-table" aria-hidden="true"></i>
                                 <p>Table List</p>
                             </a>
@@ -121,13 +127,16 @@
                     </div>
                 </nav>
                 <div class="content">
+                    @yield('modal')
                     @yield('content')
                 </div>
             </div>
         </div>
-        <script src="{{ asset('js/jquery.min.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
         <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
-        <script src="{{ asset('js/backoffice.js') }}"></script>
+        <script src="{{ asset('js/jquery.min.js') }}"></script>
+        <script src="{{ asset('js/classie.js') }}"></script>
+        <script src="{{ asset('js/modalEffects.js') }}"></script>
         <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
         <script>
             CKEDITOR.replace('article-ckeditor');

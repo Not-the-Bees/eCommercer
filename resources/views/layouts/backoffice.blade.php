@@ -1,146 +1,122 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-        <meta name="viewport" content="width=device-width" />
-        <title>@yield('title')</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow">
-        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/backoffice.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/modal.css') }}">
-    </head>
-    <body>
-        <div class="wrapper">
-            <div class="sidebar" data-color="blue" data-image="{{ asset('img/sidebar-5.jpg') }}">
-                <!--   you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple" -->
-                <div class="sidebar-wrapper">
-                    <div class="logo">
-                        <a href="{{ route('home') }}" class="simple-text">
-                            <img src="{{ asset('img/logo.png') }}" width="180px">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>@yield('title')</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <!--Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow">
+    <!-- Icons -->
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
+    <!-- Custom styles for this template -->
+    <link href="{{ asset('css/bo2.css') }}" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid" id="wrapper">
+    <div class="row">
+        <nav class="sidebar col-xs-12 col-sm-4 col-lg-3 col-xl-2 bg-faded sidebar-style-1 text-center">
+            <div class="logo justify-center">
+                    <img src="{{ asset('img/logo.png') }}" width="180px">
+            </div>
+            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><em class="fa fa-bars"></em></a>
+            <ul class="nav nav-pills flex-column sidebar-nav">
+                <li class="nav-item"><a class="nav-link" href="{{ route('home') }}"><em class="fa fa-home"></em> Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html"><em class="fa fa-dashboard"></em> Dashboard</a></li>
+                <li class="nav-item">
+                    <div class="dropdown dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <em class="fa fa-desktop"></em> Interface
                         </a>
-                    </div>
-
-                    <ul class="nav">
-                        <li>
-                            <a class="nav-link" href="dashboard.html">
-                                <i class="fa fa-tachometer" aria-hidden="true"></i>
-                                <p>Dashboard</p>
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                                <button class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fa fa-desktop" aria-hidden="true"></i>
-                                    <p>Interface</p>
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            <ul class="collapse" id="collapseExample">
-                                <li class="secLink">
-                                    <a href="{{ route('slide.index') }}">Gestion du slideshow</a>
-                                </li>
-                                <li class="secLink">
-                                    <a href="{{ route('content.index') }}">Gestion du contenu</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="user.html">
-                                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                                <p>User Profile</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="nav-link" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
-                                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
-                                <p>Products</p>
-                            </a>
-                            <ul class="nav sidenav-second-level collapse" id="collapseComponents">
-                                <li class="secLink">
-                                    <a  href="{{ route('product.create') }}">Ajouter un produit</a>
-                                </li>
-                                <li class="secLink">
-                                    <a href="#">Gestion des produits</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="table.html">
-                                <i class="fa fa-table" aria-hidden="true"></i>
-                                <p>Table List</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="main-panel">
-                <nav class="navbar navbar-default navbar-fixed">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="#">User</a>
-                        </div>
-                        <div class="collapse navbar-collapse">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li>
-                                    <a href="">
-                                        <p>Account</p>
-                                    </a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                        <p>
-                                            Dropdown
-                                            <b class="caret"></b>
-                                        </p>
-
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p>Log out</p>
-                                    </a>
-                                </li>
-                                <li class="separator hidden-lg hidden-md"></li>
-                            </ul>
+                        <div class="dropdown-menu dropdown-menu-right" style="background-color: black;" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="{{ route('slide.index') }}"><em class="fa fa-angle-double-left"></em> Gestion du slideshow</a>
+                            <a class="dropdown-item" href="{{ route('content.index') }}"><em class="fa fa-quote-right"></em> Gestion du contenu</a>
                         </div>
                     </div>
-                </nav>
-                <div class="content">
-                    @yield('modal')
-                    @yield('content')
-                </div>
-            </div>
-        </div>
-        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-        <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
-        <script src="{{ asset('js/jquery.min.js') }}"></script>
-        <script src="{{ asset('js/classie.js') }}"></script>
-        <script src="{{ asset('js/modalEffects.js') }}"></script>
-        <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
-        <script>
-            CKEDITOR.replace('article-ckeditor');
-        </script>
-    </body>
+                </li>
 
+
+                <li class="nav-item">
+                    <div class="dropdown dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <em class="fa fa-product-hunt"></em> Porduits
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" style="background-color: black;" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="{{ route('product.create') }}"><em class="fa fa-plus-circle"></em> Ajouter un produit</a>
+                            <a class="dropdown-item" href="#"><em class="fa fa-sliders mr-1"></em> Gestion des produits</a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="nav-item"><a class="nav-link" href="charts.html"><em class="fa fa-user-circle"></em> Commandes</a></li>
+                <li class="nav-item"><a class="nav-link" href="elements.html"><em class="fa fa-hand-o-up"></em> Stocks</a></li>
+            </ul>
+
+        </nav>
+
+        <main class="col-xs-12 col-sm-8 offset-sm-4 col-lg-9 offset-lg-3 col-xl-10 offset-xl-2 pt-3 pl-4">
+            <header class="page-header row justify-center">
+                <div class="col-md-6 col-lg-8" >
+                    <h1 class="float-left text-center text-md-left">Dashboard</h1>
+                </div>
+
+                <div class="dropdown user-dropdown col-md-6 col-lg-4 text-center text-md-right"><a class="btn btn-stripped dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="username mt-1">
+                            <h4 class="mb-1">Username</h4>
+                        </div>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right" style="margin-right: 1.5rem;" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#"><em class="fa fa-user-circle mr-1"></em> View Profile</a>
+                        <a class="dropdown-item" href="#"><em class="fa fa-sliders mr-1"></em> Preferences</a>
+                        <a class="dropdown-item" href="#"><em class="fa fa-power-off mr-1"></em> Logout</a>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+            </header>
+
+            <div class="content">
+                @yield('modal')
+                @yield('content')
+            </div>
+            <!-- Bootstrap core JavaScript
+            ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="{{ asset('js/jquery.min.js') }}"></script>
+            <script src="{{ asset('js/tether.min.js') }}"></script>
+            <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+            <script src="{{ asset('js/chart.min.js') }}"></script>
+            <script src="{{ asset('js/chart-data.js') }}"></script>
+            <script src="{{ asset('js/easypiechart.js') }}"></script>
+            <script src="{{ asset('js/easypiechart-data.js') }}"></script>
+            <script src="{{ asset('js/bootstrap-datepicker.js') }}"></script>
+            <script src="{{ asset('js/custom.js') }}"></script>
+            <script>
+                window.onload = function () {
+                    var chart1 = document.getElementById("line-chart").getContext("2d");
+                    window.myLine = new Chart(chart1).Line(lineChartData, {
+                        responsive: true,
+                        scaleLineColor: "rgba(0,0,0,.2)",
+                        scaleGridLineColor: "rgba(0,0,0,.05)",
+                        scaleFontColor: "#c5c7cc"
+                    });
+                };
+            </script>
+
+            <script>
+                $(function () {
+                    $('[data-toggle="popover"]').popover()
+                })
+            </script>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+            <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+            <script>
+                CKEDITOR.replace('article-ckeditor');
+            </script>
+</body>
 </html>

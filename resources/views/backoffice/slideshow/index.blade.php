@@ -3,59 +3,64 @@
 @section('title', 'Backoffice - Slideshow')
 
 @section('modal')
-<label for="modal1" class="btn btn-back">Ajouter un slide</label>
-<div class="modal-container">
-    <input type="checkbox" class="modal-checkbox fadeInDown" id="modal1">
-    <label for="modal1" class="modal-overlay"></label>
-    <div class="modal-content">
-        <label for="modal1" class="modal-close">&times;</label>
-        <div class="modal-header">
-            <h4 class="modal-title" id="exampleModalLabel">Ajouter un slide</h4>
-        </div>
-        <div class="modal-body">
-            <form method="post" action="{{ route('slide.store') }}" enctype="multipart/form-data">
-                {{ csrf_field() }}
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label>Titre</label>
-                            <input type="text" name="title" class="form-control">
+    <div class="text-center">
+        <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Ajouter un slide</button>
+    </div>
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="{{ route('slide.store') }}" enctype="multipart/form-data">
+                    {{ csrf_field() }}
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Titre</label>
+                                <input type="text" name="title" class="form-control">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label>Ajouter une image</label>
-                            <input class="btnAddProd" name="img" type="file" name="pic" accept="image/*">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Ajouter une image</label>
+                                <input class="btnAddProd" name="img" type="file" name="pic" accept="image/*">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label>Description du produit</label>
-                            <textarea name="description" rows="5" class="form-control"></textarea>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Description du produit</label>
+                                <textarea name="description" rows="5" class="form-control"></textarea>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Titre du boutton</label>
-                            <input type="text" name="button_title" class="form-control">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Titre du boutton</label>
+                                <input type="text" name="button_title" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Lien du boutton</label>
+                                <input type="text" name="button_action" class="form-control">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Lien du boutton</label>
-                            <input type="text" name="button_action" class="form-control">
-                        </div>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-back pull-right">Ajouter le slide</button>
-                <div class="clearfix"></div>
-            </form>
+                    <button type="submit" class="btn btn-primary pull-right">Ajouter le slide</button>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
         </div>
     </div>
 </div>
@@ -63,48 +68,26 @@
 
 @section ('content')
 @foreach($slides as $slide)
-<div class="row">
+<div class="row" style="margin-top: 15px;">
     <div class="col-md-1"></div>
     <div class="col-md-10">
-        <!-- Widget: user widget style 1 -->
-        <div class="box box-widget widget-user">
-            <!-- Add the bg color to the header using any of the bg-* classes -->
-            <div class="widget-user-header bg-black" style="color: white; background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ asset('storage/' . $slide->img . '') }}'); background-position: center center;">
-                <h3 class="widget-user-username">{{ $slide->title }}</h3>
-                <a href=""><p class="widget-user-desc">Modifier le slide</p></a>
-                <a href=""><p class="widget-user-desc">Supprimer la slide</p></a>
-            </div>
-            <div class="box-footer">
-                <div class="row">
-                    <div class="col-sm-4 border-right">
-                        <div class="description-block">
-                            <h5 class="description-header">Description de la slide</h5>
-                            <p class="description-header">{{ $slide->description }}</p>
-                        </div>
-                        <!-- /.description-block -->
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-sm-4 border-right">
-                        <div class="description-block">
-                            <h5 class="description-header">Boutton</h5>
-                            <p class="description-header">{{ $slide->button_title }}</p>
-                        </div>
-                        <!-- /.description-block -->
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-sm-4">
-                        <div class="description-block">
-                            <h5 class="description-header">Lien sur boutton</h5>
-                            <p class="description-header">{{ $slide->button_action }}</p>
-                        </div>
-                        <!-- /.description-block -->
-                    </div>
-                    <!-- /.col -->
+        <div class="card-header">
+            <p class="p-slide">Slide</p>
+            <div class="dropdown card-title-btn-container">
+                <button class="btn btn-sm btn-subtle dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><em class="fa fa-cog"></em></button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#"><em class="fa fa-edit"></em> Modifier la slide</a>
+                    <a class="dropdown-item" href="#"><em class="fa fa-times"></em> Supprimer la slide</a>
                 </div>
-                <!-- /.row -->
             </div>
         </div>
-        <!-- /.widget-user -->
+        <div class="card card-inverse" style="color: white; background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ asset('storage/' . $slide->img . '') }}'); background-position: center center;">
+            <div class="card-block text-center">
+                <h3 class="card-title">{{ $slide->title }}</h3>
+                <p class="card-text">{{ $slide->description }}</p>
+                <button type="button" class="btn btn-primary" data-toggle="popover" title="Lien du bouton" data-content="{{ $slide->button_action }}">{{ $slide->button_title }}</button>
+            </div>
+        </div>
     </div>
     <div class="col-md-1"></div>
 </div>

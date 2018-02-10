@@ -17,4 +17,14 @@ class PagesController extends Controller
         $slides = Slide::all();
         return view('home', compact('slides'));
     }
+
+    public function login()
+    {
+        return view('auth.login');
+    }
+
+    public function register()
+    {
+        return view('auth.register');
+    }
 }

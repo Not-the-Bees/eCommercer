@@ -21,6 +21,10 @@ class ProductController extends Controller
         return view('product.index', compact('products'));
     }
 
+    public function productpage() {
+        return view('backoffice.product.index');
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -29,7 +33,7 @@ class ProductController extends Controller
     public function create()
     {
         $categories = Category::all();
-        return view('backoffice.product', compact('categories'));
+        return view('backoffice.product.createproduct', compact('categories'));
     }
 
     /**

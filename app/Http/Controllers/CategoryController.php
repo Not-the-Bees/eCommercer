@@ -15,7 +15,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        $categories = Category::all();
+        return view('backoffice.product.createcategory', compact('categories'));
     }
 
     /**
@@ -25,7 +26,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -39,7 +40,7 @@ class CategoryController extends Controller
         Category::create(array(
             'name' => $request->input('name')
         ));
-        return redirect()->route('product.create');
+        return redirect()->route('category.index');
     }
 
     /**

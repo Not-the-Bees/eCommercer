@@ -20,65 +20,44 @@
     <div class="row">
         <nav class="sidebar col-xs-12 col-sm-4 col-lg-3 col-xl-2 bg-faded sidebar-style-1 text-center">
             <div class="logo justify-center">
-                    <img src="{{ asset('img/logo.png') }}" width="180px">
+                <img src="{{ asset('img/logo.png') }}" width="180px">
             </div>
             <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><em class="fa fa-bars"></em></a>
             <ul class="nav nav-pills flex-column sidebar-nav">
                 <li class="nav-item"><a class="nav-link" href="{{ route('home') }}"><em class="fa fa-home"></em> Accueil</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html"><em class="fa fa-dashboard"></em> Dashboard</a></li>
-                <li class="nav-item">
-                    <div class="dropdown dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <em class="fa fa-desktop"></em> Interface
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" style="background-color: black;" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="{{ route('slide.index') }}"><em class="fa fa-angle-double-left"></em> Gestion du slideshow</a>
-                            <a class="dropdown-item" href="{{ route('content.index') }}"><em class="fa fa-quote-right"></em> Gestion du contenu</a>
-                        </div>
-                    </div>
-                </li>
-
-
-                <li class="nav-item">
-                    <div class="dropdown dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <em class="fa fa-product-hunt"></em> Porduits
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" style="background-color: black;" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="{{ route('product.create') }}"><em class="fa fa-plus-circle"></em> Ajouter un produit</a>
-                            <a class="dropdown-item" href="#"><em class="fa fa-sliders mr-1"></em> Gestion des produits</a>
-                        </div>
-                    </div>
-                </li>
-
-
-                <li class="nav-item"><a class="nav-link" href="charts.html"><em class="fa fa-user-circle"></em> Commandes</a></li>
-                <li class="nav-item"><a class="nav-link" href="elements.html"><em class="fa fa-hand-o-up"></em> Stocks</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><em class="fa fa-dashboard"></em> Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('conversations') }}"><em class="fa fa-envelope"></em> Messagerie</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('interface.index') }}"><em class="fa fa-desktop"></em> Interface</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('product.page') }}"><em class="fa fa-product-hunt"></em> Produits</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><em class="fa fa-shopping-cart"></em> Commandes</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><em class="fa fa-balance-scale"></em> Stocks</a></li>
             </ul>
-
         </nav>
-
         <main class="col-xs-12 col-sm-8 offset-sm-4 col-lg-9 offset-lg-3 col-xl-10 offset-xl-2 pt-3 pl-4">
             <header class="page-header row justify-center">
                 <div class="col-md-6 col-lg-8" >
-                    <h1 class="float-left text-center text-md-left">Dashboard</h1>
+                    <div class="float-left text-center text-md-left">@yield('title')</div>
                 </div>
-
-                <div class="dropdown user-dropdown col-md-6 col-lg-4 text-center text-md-right"><a class="btn btn-stripped dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="dropdown user-dropdown col-md-6 col-lg-4 text-center text-md-right">
+                    <a class="btn btn-stripped dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="username mt-1">
-                            <h4 class="mb-1">Username</h4>
+                            <h4 class="mb-1">{{ Auth::user()->name }}</h4>
                         </div>
                     </a>
-
-                    <div class="dropdown-menu dropdown-menu-right" style="margin-right: 1.5rem;" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#"><em class="fa fa-user-circle mr-1"></em> View Profile</a>
+                    <div class="dropdown-menu dropdown-menu-right" style="margin-right: 1.5rem;" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#"><em class="fa fa-edit"></em> Mes informations</a>
                         <a class="dropdown-item" href="#"><em class="fa fa-sliders mr-1"></em> Preferences</a>
-                        <a class="dropdown-item" href="#"><em class="fa fa-power-off mr-1"></em> Logout</a>
+                        <a class="dropdown-item" href="{{ route('logout') }}"
+                           onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                            <em class="fa fa-power-off mr-1"></em> Se déconnecter
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
                     </div>
                 </div>
-
                 <div class="clear"></div>
             </header>
-
             <div class="content">
                 @yield('modal')
                 @yield('content')
@@ -106,13 +85,12 @@
                     });
                 };
             </script>
-
             <script>
                 $(function () {
                     $('[data-toggle="popover"]').popover()
                 })
             </script>
-
+            @yield('inversescroll')
             <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
             <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
             <script>

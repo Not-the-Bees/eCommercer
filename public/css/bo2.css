@@ -1,16 +1,17 @@
 body {
   background-color: #ffffff;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'PT Sans Narrow', 'sans-serif';
   font-size: 16px;
   color: #444444; }
 
 h1, h2 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'PT Sans Narrow', 'sans-serif';
   padding-bottom: 1.2rem;
   border-bottom: 1px solid #dfdfdf; }
 
 h3, h4, h5, h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: 'PT Sans Narrow', 'sans-serif';
+}
 
 a, a:visited {
   color: #1675a8; }
@@ -23,34 +24,34 @@ a:hover, a:focus, a:active {
   background-color: #1675a8; }
 
 h1 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'PT Sans Narrow', 'sans-serif';
   font-size: 2.4rem;
   font-weight: 600; }
 
 h2 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'PT Sans Narrow', 'sans-serif';
   font-size: 2.4rem;
   font-weight: 500; }
 
 h3 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'PT Sans Narrow', 'sans-serif';
   font-size: 1.8rem;
   font-weight: 500; }
 
 h4 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'PT Sans Narrow', 'sans-serif';
   font-size: 1.4rem;
   font-weight: 500; }
 
 h5 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'PT Sans Narrow', 'sans-serif';
   font-size: 1rem;
   letter-spacing: .1rem;
   font-weight: 600;
   text-transform: uppercase; }
 
 h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'PT Sans Narrow', 'sans-serif';
   font-size: .8rem;
   letter-spacing: .1rem;
   font-weight: 500;
@@ -334,7 +335,7 @@ p {
   margin-left: 0; }
 
 .page-header {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'PT Sans Narrow', 'sans-serif';
   margin-top: 0rem;
   margin-bottom: 2.4rem;
   padding-bottom: 1rem;
@@ -574,7 +575,9 @@ input[type=checkbox]:checked + label {
   .todo-list-footer .btn {
     border-radius: .4rem; }
 
+
   /* Ajouts personnels eCommercer*/
+
 .simple-text:hover {
   background-color: none !important;
 }

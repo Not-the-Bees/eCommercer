@@ -14,8 +14,7 @@ class SlideController extends Controller
      */
     public function index()
     {
-        $slides = Slide::all();
-        return view('backoffice.slideshow.index', compact('slides'));
+        return view('backoffice.interface.index');
     }
 
     /**
@@ -47,7 +46,7 @@ class SlideController extends Controller
                 'button_action' => $request->input('button_action')
             ]);
         }
-        return redirect()->route('slide.index');
+        return redirect()->route('slide.show');
     }
 
     /**
@@ -58,7 +57,8 @@ class SlideController extends Controller
      */
     public function show(Slide $slide)
     {
-        //
+        $slides = Slide::all();
+        return view('backoffice.slideshow.index', compact('slides'));
     }
 
     /**

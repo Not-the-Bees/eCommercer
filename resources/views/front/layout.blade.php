@@ -59,7 +59,7 @@
                     <ul class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(-231px, -105px, 0px); top: 65px; left: -80px; will-change: transform;">
                         <li class="button-container">
                             <a class="btn btn-primary btn-block btn-fill" href="#"><em class="fa fa-dashboard"></em> Dashboard</a>
-                            <a class="btn btn-primary btn-block btn-fill" href="{{ route('conversations') }}"><em class="fa fa-envelope"></em> Messagerie</a>
+                            <a class="btn btn-primary btn-block btn-fill" href="{{ route('admin.conversations.index') }}"><em class="fa fa-envelope"></em> Messagerie</a>
                             <a class="btn btn-primary btn-block btn-fill" href="{{ route('admin.interface.index') }}"><em class="fa fa-desktop"></em> Interface</a>
                             <a class="btn btn-primary btn-block btn-fill" href="{{ route('admin.product.index') }}"><em class="fa fa-product-hunt"></em> Produits</a>
                             <a class="btn btn-primary btn-block btn-fill" href="#"><em class="fa fa-shopping-cart"></em> Commandes</a>

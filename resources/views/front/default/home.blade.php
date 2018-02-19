@@ -36,7 +36,7 @@
 </div>
 @endif
 
-<h2 class="text-center title-bg">Les meilleurs ventes</h2>
+<h2 class="text-center title-bg">Les meilleures ventes</h2>
 <div class="row">
     <div class="col-lg-3 col-sm-6 portfolio-item">
         <div class="card h-100 centered">

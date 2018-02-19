@@ -1,0 +1,16 @@
+    <div class="col-md-1"></div>
+    <div class="col-md-2">
+        <div class="list-group">
+            @foreach($users as $user)
+                <a class="list-group-item d-flex justify-content-between align-content-center" href="{{ route('admin.conversations.show', $user->id) }}">
+                    {{ $user->name }}
+                    @if(isset($unread[$user->id]))
+                        <span class="badge badge-pill badge-primary">
+                            {{ $unread[$user->id] }}
+                        </span>
+                    @endif
+                </a>
+            @endforeach
+        </div>
+    </div>
+    <div class="col-md-1"></div>
